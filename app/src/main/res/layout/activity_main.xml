@@ -8,11 +8,35 @@
     android:paddingRight="32dp"
     android:paddingTop="32dp"
     android:paddingBottom="32dp"
-    tools:context="com.example.scott.tutorialsgalore.MainActivity">
+    tools:context="com.example.scott.tutorialsgalore.MainActivity"
+    android:background="#FFF">
 
     <TextView
-        android:text="Hello World!"
+        android:text="0"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/textViewCount"
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:id="@+id/addButton"
+        android:layout_below="@+id/textViewCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetButton"
+        android:layout_below="@+id/addButton"
+        android:layout_alignStart="@+id/addButton"
+        android:layout_marginTop="49dp" />
 
 </RelativeLayout>
